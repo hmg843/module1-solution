@@ -18,7 +18,9 @@
             numberOfItems++;
           }
         }
-        if(numberOfItems > 3) {
+        if(numberOfItems == 0) {
+          $scope.lunchMenuCheckResult = "Please enter data first";
+        } else if(numberOfItems > 3) {
           $scope.lunchMenuCheckResult = "Too Much!";
         } else if(numberOfItems > 0) {
           $scope.lunchMenuCheckResult = "Enjoy!";
